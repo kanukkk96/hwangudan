@@ -1,0 +1,2963 @@
+{
+  "version": 4,
+  "entities": {
+    "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC": {
+      "components": [
+        {
+          "name": "mtdata",
+          "props": {
+            "meta_data": ""
+          }
+        },
+        {
+          "name": "fog",
+          "props": {
+            "type": "disabled",
+            "color": 16777215,
+            "near": 0.0025,
+            "far": 1000,
+            "density": 0.0025
+          }
+        },
+        {
+          "name": "audio-settings",
+          "props": {
+            "usePositionalAudio": true,
+            "avatarDistanceModel": "inverse",
+            "avatarRolloffFactor": 2,
+            "avatarRefDistance": 1,
+            "avatarMaxDistance": 10000,
+            "mediaVolume": 1,
+            "mediaDistanceModel": "inverse",
+            "mediaRolloffFactor": 1,
+            "mediaRefDistance": 20,
+            "mediaMaxDistance": 10000,
+            "mediaConeInnerAngle": 360,
+            "mediaConeOuterAngle": 0,
+            "mediaConeOuterGain": 0
+          }
+        },
+        {
+          "name": "renderer-settings",
+          "props": {
+            "LODs": {
+              "x": 5,
+              "y": 15,
+              "z": 30
+            },
+            "overrideRendererSettings": false,
+            "csm": true,
+            "toneMapping": 1,
+            "toneMappingExposure": 0.8,
+            "shadowMapType": 2
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": 1,
+            "envMapTextureType": 0,
+            "envMapSourceColor": 16777215,
+            "envMapSourceURL": "__$project$__/default-project/assets/skyboxsun25deg/",
+            "envMapIntensity": 1,
+            "envMapCubemapBake": {
+              "bakeType": 1,
+              "resolution": 2048,
+              "refreshMode": 0,
+              "envMapOrigin": "",
+              "boxProjection": true,
+              "bakePosition": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "bakePositionOffset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "bakeScale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            "forModel": false
+          }
+        },
+        {
+          "name": "cubemapbake",
+          "props": {
+            "options": {
+              "bakeType": 1,
+              "resolution": 2048,
+              "refreshMode": 0,
+              "envMapOrigin": "__$project$__/default-project/test.cubemap.png",
+              "boxProjection": true,
+              "bakePosition": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "bakePositionOffset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "bakeScale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "empty_scene"
+    },
+    "1463EAC0-883F-493A-9A33-6757CC8FF48B": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 5,
+              "z": 10
+            },
+            "rotation": {
+              "x": -0.4636000018424061,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "scene-preview-camera",
+          "props": {}
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 0,
+      "name": "scene preview camera"
+    },
+    "ED0888E7-4032-4DD9-9B43-59B02ECCCB7E": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "skybox",
+          "props": {
+            "backgroundColor": 0,
+            "equirectangularPath": "",
+            "cubemapPath": "__$project$__/default-project/assets/skyboxsun25deg/",
+            "backgroundType": 1,
+            "skyboxProps": {
+              "turbidity": 10,
+              "rayleigh": 1,
+              "luminance": 1,
+              "mieCoefficient": 0.004999999999999893,
+              "mieDirectionalG": 0.99,
+              "inclination": 0.10471975511965978,
+              "azimuth": 0.16666666666666666
+            }
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 1,
+      "name": "skybox"
+    },
+    "1B698482-C15A-4CEC-9247-03873520DF70": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "ground-plane",
+          "props": {
+            "color": 8311585,
+            "generateNavmesh": false
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 2,
+      "name": "ground plane"
+    },
+    "1B698483-C15A-4CEC-9247-03873520DF70": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 16.5,
+              "y": 0,
+              "z": -21.5
+            },
+            "rotation": {
+              "x": -3.141592653589793,
+              "y": 1.2246468525851686e-16,
+              "z": -3.1415926535897922
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "spawn-point",
+          "props": {}
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 3,
+      "name": "spawn point"
+    },
+    "1B698484-C15A-4CEC-9247-03873520DF70": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "postprocessing",
+          "props": {
+            "options": {
+              "SMAAEffect": {
+                "isActive": true,
+                "blendFunction": 13,
+                "preset": 1,
+                "edgeDetectionMode": 2,
+                "predicationMode": 0
+              },
+              "OutlineEffect": {
+                "isActive": true,
+                "blendFunction": 16,
+                "patternTexture": null,
+                "edgeStrength": 1,
+                "pulseSpeed": 0,
+                "visibleEdgeColor": 16777215,
+                "hiddenEdgeColor": 16777215,
+                "resolutionScale": 0.5,
+                "width": -1,
+                "height": -1,
+                "kernelSize": 0,
+                "blur": false,
+                "xRay": true
+              },
+              "SSAOEffect": {
+                "isActive": false,
+                "blendFunction": 10,
+                "distanceScaling": true,
+                "depthAwareUpsampling": true,
+                "samples": 16,
+                "rings": 7,
+                "distanceThreshold": 0.125,
+                "distanceFalloff": 0.02,
+                "minRadiusScale": 1,
+                "bias": 0.25,
+                "radius": 0.01,
+                "intensity": 2,
+                "fade": 0.05
+              },
+              "DepthOfFieldEffect": {
+                "isActive": false,
+                "blendFunction": 13,
+                "focusDistance": 0.02,
+                "focalLength": 0.5,
+                "bokehScale": 1
+              },
+              "BloomEffect": {
+                "isActive": true,
+                "blendFunction": 16,
+                "kernelSize": 2,
+                "luminanceThreshold": 1,
+                "luminanceSmoothing": 0.1,
+                "intensity": 0.2
+              },
+              "ToneMappingEffect": {
+                "isActive": false,
+                "blendFunction": 13,
+                "adaptive": true,
+                "resolution": 512,
+                "middleGrey": 0.6,
+                "maxLuminance": 32,
+                "averageLuminance": 1,
+                "adaptationRate": 2
+              },
+              "BrightnessContrastEffect": {
+                "isActive": false,
+                "brightness": 0.05,
+                "contrast": 0.1
+              },
+              "HueSaturationEffect": {
+                "isActive": false,
+                "hue": 0,
+                "saturation": -0.15
+              },
+              "ColorDepthEffect": {
+                "isActive": false,
+                "bits": 16
+              },
+              "LinearTosRGBEffect": {
+                "isActive": false
+              }
+            }
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 4,
+      "name": "post processing"
+    },
+    "1B698484-C15A-4CEC-9247-03873520DF71": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "hemisphere-light",
+          "props": {
+            "skyColor": 16777215,
+            "groundColor": 16777215,
+            "intensity": 1
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 5,
+      "name": "hemisphere light"
+    },
+    "46BB52A2-E365-410F-BC37-5873691B48C9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0.5235987826331087,
+              "y": 0.609119929255003,
+              "z": 2.604002372320199e-9
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "directional-light",
+          "props": {
+            "color": 16777215,
+            "intensity": 1,
+            "castShadow": true,
+            "shadowMapResolution": [
+              512,
+              512
+            ],
+            "shadowBias": 0,
+            "shadowRadius": 1,
+            "cameraFar": 100,
+            "showCameraHelper": false,
+            "useInCSM": true
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 6,
+      "name": "directional light"
+    },
+    "f4cd5ba7-f0c0-42cc-82ce-324a71917b3e": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 27.399999618530273,
+              "y": 0.5699999928474426,
+              "z": 40.970001220703125
+            },
+            "rotation": {
+              "x": 0,
+              "y": -0.01745329207103452,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.38999998569488525,
+              "y": 1,
+              "z": 0.30000001192092896
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 7,
+      "name": "Box Collider 20"
+    },
+    "b86931b1-71da-4639-843b-6f2a5bc6a13e": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 29.399999618530273,
+              "y": 1.2000000476837158,
+              "z": 32
+            },
+            "rotation": {
+              "x": 0,
+              "y": -0.01745329207103452,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.5799999833106995,
+              "y": 1,
+              "z": 0.4000000059604645
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 8,
+      "name": "Box Collider 21"
+    },
+    "db6960a7-ed42-4040-81c2-70e6ba66dafb": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 38.70000076293945,
+              "y": 0.3700000047683716,
+              "z": 35
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.5235987642179206,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.4000000059604645,
+              "z": 1.2000000476837158
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 9,
+      "name": "Box Collider 22"
+    },
+    "4fe17e97-7584-4f90-94e5-46edd169ae94": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 38.70000076293945,
+              "y": 0.3700000047683716,
+              "z": 28
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.5235987642179206,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.4000000059604645,
+              "z": 1.2000000476837158
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 10,
+      "name": "Box Collider 23"
+    },
+    "ee9176e4-c9ab-40cf-bfa4-d40b653a10f7": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 38.70000076293945,
+              "y": 0.3700000047683716,
+              "z": 21
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.5235987642179206,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.4000000059604645,
+              "z": 1.2000000476837158
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 11,
+      "name": "Box Collider 24"
+    },
+    "c7f6bac4-30ad-40ae-a484-0258e914f182": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 38.70000076293945,
+              "y": 0.3700000047683716,
+              "z": 14
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.5235987642179206,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.4000000059604645,
+              "z": 1.2000000476837158
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 12,
+      "name": "Box Collider 25"
+    },
+    "0fe700e7-7aec-4a75-beee-648de64eeb8b": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 38.70000076293945,
+              "y": 0.3700000047683716,
+              "z": 7
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.5235987642179206,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.4000000059604645,
+              "z": 1.2000000476837158
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 13,
+      "name": "Box Collider 26"
+    },
+    "e516cce1-3dc3-4d3a-ae5c-b5ccae556c21": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 38.70000076293945,
+              "y": 0.3700000047683716,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.5235987642179206,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.4000000059604645,
+              "z": 1.2000000476837158
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 14,
+      "name": "Box Collider 27"
+    },
+    "debe124a-2719-4a8a-9d9f-0f0e05550c06": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 8,
+              "y": 1,
+              "z": 60
+            },
+            "rotation": {
+              "x": 0,
+              "y": -1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 1,
+              "z": 5.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 15,
+      "name": "Box Collider 28"
+    },
+    "5d04c2d9-2803-4f8c-a924-de61a63073be": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 35.5,
+              "y": 0.029999999329447746,
+              "z": 34
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.7000000476837158,
+              "y": 0.10000000149011612,
+              "z": 35
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 16,
+      "name": "Box Collider 29"
+    },
+    "f83ce087-2b95-4739-982d-1b522720607f": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 33.5,
+              "y": -0.07000000029802322,
+              "z": 0.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.7000000476837158,
+              "y": 0.20000000298023224,
+              "z": 3.700000047683716
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 17,
+      "name": "Box Collider 30"
+    },
+    "46e9add8-ff1b-423d-9836-49c9de0bc41b": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 7.5,
+              "y": 0,
+              "z": 39
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.7000000476837158,
+              "y": 0.10000000149011612,
+              "z": 11
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 18,
+      "name": "Box Collider 31"
+    },
+    "442e6c62-415a-4b20-bab7-dddf7b06bcc1": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 5.5,
+              "y": -0.07000000029802322,
+              "z": 29.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.7000000476837158,
+              "y": 0.20000000298023224,
+              "z": 3.700000047683716
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 19,
+      "name": "Box Collider 32"
+    },
+    "1c41c541-56bf-4e8c-b07d-11357603b402": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 7.899999618530273,
+              "y": 0,
+              "z": 50
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.7000000476837158,
+              "y": 0.10000000149011612,
+              "z": 29
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 20,
+      "name": "Box Collider 33"
+    },
+    "f389e8c5-1e7c-4a30-b71b-a50e6ddb1289": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 14.5,
+              "y": 0,
+              "z": 54
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.7000000476837158,
+              "y": 0.10000000149011612,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 21,
+      "name": "Box Collider 34"
+    },
+    "e45b94c9-465d-48dc-a65d-adc61c383214": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -11.5,
+              "y": 0,
+              "z": 49
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.800000011920929,
+              "y": 0.10000000149011612,
+              "z": 10
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 22,
+      "name": "Box Collider 35"
+    },
+    "7fde29d7-ac70-47d0-83b0-994633e3db0c": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -41.5,
+              "y": 1.2000000476837158,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1,
+              "z": 10
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 23,
+      "name": "Box Collider 36"
+    },
+    "531d8e28-2b5a-43b9-b294-7ba89bcc685c": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -42,
+              "y": 1.100000023841858,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 3.9000000953674316,
+              "y": 1,
+              "z": 10
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 24,
+      "name": "Box Collider 37"
+    },
+    "4f1f9f55-61ed-46a1-94d9-75db51828af6": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -11.5,
+              "y": 2.5,
+              "z": 39.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": -1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 3,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 25,
+      "name": "Box Collider 39"
+    },
+    "2ca0c8ed-15ce-4923-bb2f-9413efa151c8": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -11.5,
+              "y": 0,
+              "z": 39.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": -1.570432145554514,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.799999952316284,
+              "y": 0.20200000703334808,
+              "z": 5.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 26,
+      "name": "Box Collider 40"
+    },
+    "c7d6268f-6153-4e3c-a906-b6a6494864bf": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -24.299999237060547,
+              "y": 3.5,
+              "z": 50
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.6500000953674316,
+              "y": 2.9719998836517334,
+              "z": 4.599999904632568
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 27,
+      "name": "Box Collider 41"
+    },
+    "3a261f4d-70a2-4765-b1bc-79712f089a03": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -24.5,
+              "y": 0.25,
+              "z": 50.29999923706055
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 3.700000047683716,
+              "y": 0.20200000703334808,
+              "z": 5.699999809265137
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 28,
+      "name": "Box Collider 42"
+    },
+    "073aa35c-d2c0-4379-b56a-2d7ec5d48e64": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -11.899999618530273,
+              "y": 0.800000011920929,
+              "z": 61
+            },
+            "rotation": {
+              "x": 0,
+              "y": -1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 3,
+              "z": 4.800000190734863
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 29,
+      "name": "Box Collider 43"
+    },
+    "c1c2c773-2a0f-4e56-98dd-a18951308cf6": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -11.800000190734863,
+              "y": 0,
+              "z": 60.900001525878906
+            },
+            "rotation": {
+              "x": 0,
+              "y": -1.570432145554514,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.799999952316284,
+              "y": 0.20200000703334808,
+              "z": 5.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 30,
+      "name": "Box Collider 44"
+    },
+    "1826b8bf-12d0-41ca-bdb6-472bf8f7121d": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -39.5,
+              "y": 4.5,
+              "z": -9.399999618530273
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 3,
+              "z": 0.30000001192092896
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 31,
+      "name": "Box Collider 45"
+    },
+    "ad64f7c5-6b4a-40b0-87dc-7a161ec2a8a9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -48.900001525878906,
+              "y": 4.5,
+              "z": -9.399999618530273
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 3,
+              "z": 0.30000001192092896
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 32,
+      "name": "Box Collider 46"
+    },
+    "ba947926-efda-4c86-96b7-9f4b318f9555": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -44.20000076293945,
+              "y": 0.75,
+              "z": -8.399999618530273
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 33,
+      "name": "Box Collider 47"
+    },
+    "6c402945-3d4e-4d4c-967e-ff02c563cbac": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -44.20000076293945,
+              "y": 4.5,
+              "z": -11.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 3,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 34,
+      "name": "Box Collider 48"
+    },
+    "98011976-c278-4775-a06b-4bf39f17f456": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -15,
+              "y": 1,
+              "z": -31.799999237060547
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.472000002861023,
+              "y": 2.430000066757202,
+              "z": 8.899999618530273
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 35,
+      "name": "Box Collider 49"
+    },
+    "97c22d26-a083-4a5c-ab9c-e52e091f19f7": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -15,
+              "y": 0.699999988079071,
+              "z": -32
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.299999952316284,
+              "y": 0.0989999994635582,
+              "z": 8.711999893188477
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 36,
+      "name": "Box Collider 51"
+    },
+    "5dd5c21e-9be8-4871-b3da-d376c76338e3": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -44.5,
+              "y": 4.5,
+              "z": 13.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 3,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 37,
+      "name": "Box Collider 52"
+    },
+    "c27457fe-e5d1-4bdd-a7b0-eb101cc90843": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -44.29999923706055,
+              "y": 0.800000011920929,
+              "z": 10.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 38,
+      "name": "Box Collider 53"
+    },
+    "920ebbe2-1061-415d-b649-6864a700716a": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -44.29999923706055,
+              "y": 0.75,
+              "z": 10.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.570432145554514,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 39,
+      "name": "Box Collider 54"
+    },
+    "5d8c1e93-053a-4c04-ab32-ffa1b16d0e7c": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -39.5,
+              "y": 4.5,
+              "z": 11.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.570432145554514,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 3,
+              "z": 0.30000001192092896
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 40,
+      "name": "Box Collider 55"
+    },
+    "56ca64f6-cc0c-46ec-ade3-a68dfe190d9e": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -48.900001525878906,
+              "y": 4.5,
+              "z": 11.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.570432145554514,
+              "z": 0
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 3,
+              "z": 0.30000001192092896
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 41,
+      "name": "Box Collider 56"
+    },
+    "458b7c99-f2a8-43e0-9bee-8e14bf989794": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -28,
+              "y": 0.10000000149011612,
+              "z": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.8399999737739563,
+              "z": 3.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 42,
+      "name": "Box Collider 57"
+    },
+    "0e402d3e-6674-468e-8d51-c23786eecefa": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -27.649999618530273,
+              "y": -0.10000000149011612,
+              "z": 0.949999988079071
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.8399999737739563,
+              "z": 3.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 43,
+      "name": "Box Collider 58"
+    },
+    "8a32cb8f-8ff8-4f52-a712-e4893beb7a46": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -27.350000381469727,
+              "y": -0.3400000035762787,
+              "z": 0.949999988079071
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.8399999737739563,
+              "z": 3.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 44,
+      "name": "Box Collider 59"
+    },
+    "0b2665ca-57c1-4240-bae4-d897e14d2727": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -27,
+              "y": -0.3400000035762787,
+              "z": 0.949999988079071
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.20000000298023224,
+              "y": 0.8399999737739563,
+              "z": 3.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 45,
+      "name": "Box Collider 60"
+    },
+    "5c14d2cd-f22c-4800-9795-2906614c6737": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -26.700000762939453,
+              "y": -0.7799999713897705,
+              "z": 0.949999988079071
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.10000000149011612,
+              "y": 0.8399999737739563,
+              "z": 3.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 46,
+      "name": "Box Collider 61"
+    },
+    "f272a801-aea7-4854-90c6-ce5d3463bd93": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 51,
+              "y": 4,
+              "z": -17
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 8,
+              "y": 5.5,
+              "z": 2
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 47,
+      "name": "Box Collider 62"
+    },
+    "50841bf5-170c-4b94-b7cd-709d8a656ccc": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 26.5,
+              "y": 6,
+              "z": -54
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704501876816281,
+              "z": 0
+            },
+            "scale": {
+              "x": 11,
+              "y": 6,
+              "z": 2
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 48,
+      "name": "Box Collider 63"
+    },
+    "b528139e-1ad6-4b9c-8e17-2ec59d92d717": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 26.5,
+              "y": 6,
+              "z": -54
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704380627536063,
+              "z": 0
+            },
+            "scale": {
+              "x": 11,
+              "y": 6,
+              "z": 2
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 49,
+      "name": "Box Collider 64"
+    },
+    "27ae4930-86ce-44ce-9b38-ebf01b2cee33": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -69.9000015258789,
+              "y": 1.4700000286102295,
+              "z": -13.630000114440918
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.03490658421907115,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.2000000476837158,
+              "y": 0.30000001192092896,
+              "z": 0.15000000596046448
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 50,
+      "name": "Box Collider 65"
+    },
+    "86f0327d-e34d-4efa-ad70-e991e5ba2819": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -69.9000015258789,
+              "y": 1.7400000095367432,
+              "z": -12.699999809265137
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.03490658421907115,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.2000000476837158,
+              "y": 0.699999988079071,
+              "z": 0.15000000596046448
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 51,
+      "name": "Box Collider 66"
+    },
+    "430fecac-3a04-4bfa-86ad-37b5e9e972ba": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -69.9000015258789,
+              "y": 1.4700000286102295,
+              "z": -13.949999809265137
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.03490658421907115,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.2000000476837158,
+              "y": 0.10000000149011612,
+              "z": 0.15000000596046448
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 52,
+      "name": "Box Collider 67"
+    },
+    "d4e8f910-91f7-4b97-a7f6-1df3660f0ed7": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -69.9000015258789,
+              "y": 1.4700000286102295,
+              "z": -13.350000381469727
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.03490658421907115,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.2000000476837158,
+              "y": 0.10000000149011612,
+              "z": 0.15000000596046448
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 53,
+      "name": "Box Collider 68"
+    },
+    "97272659-8b8c-4a3f-9040-c22ee4004263": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -69.9000015258789,
+              "y": 1.5,
+              "z": -13
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.03490658421907115,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.2000000476837158,
+              "y": 0.699999988079071,
+              "z": 0.15000000596046448
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 54,
+      "name": "Box Collider 69"
+    },
+    "fc81125d-6461-4e90-b5f8-88d6249dd8d4": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 37,
+              "y": 1,
+              "z": -83
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.9599310185968337,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 10
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 55,
+      "name": "Box Collider 70"
+    },
+    "f7474a45-d7d4-428c-bdeb-ce1759e89231": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -30.5,
+              "y": 1,
+              "z": -82.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": -0.24434608677939287,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 2.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 56,
+      "name": "Box Collider 71"
+    },
+    "98a4853f-617a-4dc3-9599-e477022cf1b5": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -42,
+              "y": 1,
+              "z": -89.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.117010718199195,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 14
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 57,
+      "name": "Box Collider 72"
+    },
+    "776196ea-6001-442a-badb-0e7d00946257": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 59,
+              "y": 1,
+              "z": -63.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.9599310185968337,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 12
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 58,
+      "name": "Box Collider 73"
+    },
+    "db44b9a8-9cb3-452d-9f3c-90b594bc0bd2": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 47,
+              "y": 1,
+              "z": -73.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.6108652047804638,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 59,
+      "name": "Box Collider 74"
+    },
+    "e7a60eaf-7f22-4394-b3cb-52810f86c112": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 67,
+              "y": 1,
+              "z": -53.5
+            },
+            "rotation": {
+              "x": 3.141592653589793,
+              "y": 0.43633232557207496,
+              "z": -3.141592653589793
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 60,
+      "name": "Box Collider 75"
+    },
+    "08ada1be-299a-4731-babe-b8d29e0cbeac": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 67.5,
+              "y": 1,
+              "z": -46.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.9424777722029481,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 4
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 61,
+      "name": "Box Collider 76"
+    },
+    "f8e4c69e-b261-4a65-9e54-59b45cdeb4ff": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -45,
+              "y": 1.5,
+              "z": -49.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704758789410544,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 15.300000190734863
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 62,
+      "name": "Box Collider 77"
+    },
+    "c8d08c6e-0bef-4f90-8117-cb1e724d0537": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -14.5,
+              "y": 1,
+              "z": 70.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704758789410544,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 17.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 63,
+      "name": "Box Collider 78"
+    },
+    "b66dc022-5849-4caa-8631-ae4be5b5f413": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -16.5,
+              "y": 1,
+              "z": 26.700000762939453
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704758789410544,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 14.800000190734863
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 64,
+      "name": "Box Collider 79"
+    },
+    "5690f871-a1e5-4be1-b6b6-838b3de27374": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 2.5999999046325684,
+              "y": 0.5,
+              "z": 64.69999694824219
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 14.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 65,
+      "name": "Box Collider 81"
+    },
+    "c74a0804-0e54-4fa7-a5bd-9951006c50f6": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 2.5999999046325684,
+              "y": 0.5,
+              "z": 39.400001525878906
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 9.800000190734863
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 66,
+      "name": "Box Collider 82"
+    },
+    "b1ee7c9f-145c-48df-b984-565cc36bfacd": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 2.5999999046325684,
+              "y": 0.5,
+              "z": 27.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 1.100000023841858
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 67,
+      "name": "Box Collider 83"
+    },
+    "783e5f23-730b-48f0-b857-0a4f2f150628": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 15.5,
+              "y": 0.5,
+              "z": 26.700000762939453
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704758789410544,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 14.600000381469727
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 68,
+      "name": "Box Collider 84"
+    },
+    "8f5c4b74-fb70-49eb-a9ce-2b8a0b40e564": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 30,
+              "y": 0.5,
+              "z": 15
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 11.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 69,
+      "name": "Box Collider 85"
+    },
+    "912e36ae-18eb-4bfc-b70a-7929bb3f7c08": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 30,
+              "y": 0.5,
+              "z": -14
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 11.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 70,
+      "name": "Box Collider 86"
+    },
+    "bd60df6b-d096-4bdf-9167-025da11d4a52": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 15.5,
+              "y": 0.5,
+              "z": -25.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704501876816281,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 14.600000381469727
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 71,
+      "name": "Box Collider 87"
+    },
+    "b96d7324-c9c9-42c8-a392-56be3c4c1468": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -16.5,
+              "y": 1,
+              "z": -25.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.5704501876816281,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1,
+              "z": 14.800000190734863
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 72,
+      "name": "Box Collider 88"
+    },
+    "5c99ee21-ef03-407d-8339-86deeedd8654": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -31.299999237060547,
+              "y": 0.5,
+              "z": 12
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.30000001192092896,
+              "y": 1.5,
+              "z": 62
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "box-collider",
+          "props": {
+            "isTrigger": false
+          }
+        }
+      ],
+      "parent": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC",
+      "index": 73,
+      "name": "Box Collider 89"
+    }
+  },
+  "root": "2266BED7-6CC4-48A6-95DD-9BCD3CF9EAFC"
+}
